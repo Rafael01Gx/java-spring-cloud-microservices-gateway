@@ -18,9 +18,9 @@ public class GatewayConfig {
     @Bean
     public RouterFunction<ServerResponse> gatewayRouterFunctionsPagamentos() {
         return route("pagamento-service")
-                .route(path("/api/pagamento/**"), http())
+                .route(path("/api/pagamentos/**"), http())
                 .filter(stripPrefix(1))
-                .filter(lb("PAGAMENTO-MS"))
+                .filter(lb("PAGAMENTOS-MS"))
                 .build();
     }
 
