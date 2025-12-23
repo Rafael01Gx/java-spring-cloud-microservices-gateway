@@ -1,7 +1,7 @@
 spring:
   application:
     name: gateway
-  # Virtual Threads (Java 25 + Spring Boot 4.0)
+  # Virtual Threads
   threads:
     virtual:
       enabled: true
